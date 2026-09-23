@@ -6,11 +6,11 @@ const Footer = ({ siteTitle }) => (
 
     <div className="flex flex-wrap bg-white dark:bg-black text-black dark:text-gray-400">
       <div className="w-full md:w-1/3 p-4">
-        <p className="text-xs pb-2">Contact:</p>
-        <p>Company: w129</p>
-        <p>Address: Vermont Hills IL 60061</p>
-        <p>Phone: (841) 6553228</p>
-        <p>E-mail: info(at)server.com</p>
+        <p className="text-xs pb-2">Kontakt:</p>
+        <p>Firma: Zakład kamieniarski Mariusz Słupianek</p>
+        <p>Adres: Widoradz Górny 46, Wieluń</p>
+        <p>Telefon: 601-358-467</p>
+        <p>E-mail: zaklad@server.com</p>
         
       </div>
       <div className="w-full md:w-1/3 bg-white dark:bg-black text-black dark:text-gray-400 p-4">
@@ -60,7 +60,7 @@ const Footer = ({ siteTitle }) => (
         </div>
       </div>
       <div className="w-full md:w-1/3 bg-white dark:bg-black text-black dark:text-gray-400 p-4">
-        <p className="text-xs md:pb-2">Site links:</p>
+        <p className="text-xs md:pb-2">Linki:</p>
         <nav
           className="md:block md:items-center w-full md:w-auto"
         >
@@ -70,16 +70,12 @@ const Footer = ({ siteTitle }) => (
               title: `Home`
             },
             {
-              route: `/blog`,
-              title: `Blog`
-            },
-            {
-              route: `/about`,
-              title: `About`
+              route: `/kontakt`,
+              title: `Kontakt`
             }
           ].map(link => (
             <Link
-              className="block md:inline-block mt-4 md:mt-0 md:mr-6 no-underline font-medium text-primary border-b-2 border-transparent hover:border-green-500"
+              className="block md:inline-block mt-4 md:mt-0 md:mr-6 no-underline font-medium text-primary border-b-2 border-transparent hover:border-yellow-500"
               key={link.title}
               to={link.route}
             >
@@ -87,19 +83,13 @@ const Footer = ({ siteTitle }) => (
             </Link>
           ))}         
         </nav>
-        <p className="mt-6 text-xs md:pb-2">Build with:</p>
-        <p>
-          <a href="https://www.gatsbyjs.org" className="block md:inline-block mt-4 md:mt-0 md:mr-6 no-underline font-medium text-primary border-b-2 border-transparent hover:border-green-500">Gatsby</a> 
-          <a href="https://tailwindcss.com/" className="block md:inline-block mt-4 md:mt-0 md:mr-6 no-underline font-medium text-primary border-b-2 border-transparent hover:border-green-500">Tailwind CSS</a>
-          <a href="https://mdxjs.com/" className="block md:inline-block mt-4 md:mt-0 md:mr-6 no-underline font-medium text-primary border-b-2 border-transparent hover:border-green-500">MDX</a>
-        </p>
       </div>
     </div>
 
     
 
     <div className="w-full text-center p-8 bg-white dark:bg-black text-black dark:text-gray-400">
-      © {new Date().getFullYear()}, made by {siteTitle}
+      © {new Date().getFullYear()}, made by jaro124
     </div>  
 
   </footer>

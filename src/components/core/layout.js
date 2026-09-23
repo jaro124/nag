@@ -4,7 +4,7 @@ import Header from './header'
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div className='bg-gray-200 dark:bg-gray-900 text-black dark:text-gray-400'>
+    <div className='bg-stone-300 dark:bg-gray-900 text-black dark:text-gray-400'>
       <Header />
       <main>
         {children}

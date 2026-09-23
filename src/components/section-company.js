@@ -1,0 +1,45 @@
+// src/components/section-company.js
+import React from "react";
+import { Link } from "gatsby";
+
+const SectionCompany = () => {
+  return (
+    <div className="px-4">
+      <div className="flex justify-center my-6">
+        <div>
+          <h1 className="text-3xl font-semibold text-gray-800 uppercase underline decoration-orange-400 lg:text-3xl dark:text-white">
+            O nas
+          </h1>
+        </div>
+      </div>
+      <div className="max-w-4xl bg-white dark:bg-black rounded-lg mx-auto my-8 p-16">
+        <h1 className="text-2xl font-medium text-black dark:text-gray-400 mb-2">
+          Zakład kamieniarski Mariusz Słupianek
+        </h1>
+        <h2 className="font-medium text-sm text-yellow-600 mb-2 uppercase tracking-wide">
+          Firma rodzinna z wieloletnim doświadczeniem
+        </h2>
+        <p className="mt-2">
+          Jesteśmy rodzinnym zakładem kamieniarskim, który nieprzerwanie od 1984
+          roku łączy rzemieślnicze doświadczenie z indywidualnym podejściem do
+          każdej realizacji. Wieloletnia obecność na rynku pozwoliła nam zdobyć
+          wiedzę, zaufanie klientów oraz umiejętność uważnego wsłuchiwania się w
+          ich potrzeby — zwłaszcza w trudnych, osobistych chwilach związanych z
+          wyborem nagrobka.
+        </p>
+        <p className="mt-2 mb-4">
+          Stawiamy na życzliwą i spokojną obsługę, fachowe doradztwo oraz pełną
+          dostępność na każdym etapie współpracy. Pomagamy w wyborze materiału,
+          wzoru i elementów wykończenia, dbając o to, aby realizacja odpowiadała
+          oczekiwaniom klienta, jego możliwościom oraz charakterowi miejsca
+          pamięci.
+        </p>
+        <button className="bg-orange-400 hover:bg-orange-500 text-black font-semibold py-2 px-4 border border-orange-500 hover:border-transparent rounded">
+          <Link to="/kontakt">Skontaktuj się z nami</Link>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default SectionCompany;
