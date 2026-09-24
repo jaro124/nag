@@ -4,23 +4,23 @@ import { Seo } from "../components/core/seo";
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About Page">
+    <Layout pageTitle="Zakład kamieniarski Mariusz Słupianek - Kontakt">
       <div className="px-4">
-        <div className="max-w-4xl bg-white dark:bg-black rounded-lg mx-auto my-8 p-16">
-          <h1 className="text-2xl font-medium text-black dark:text-gray-400 mb-2">
+        <div className="max-w-4xl bg-white dark:bg-neutral-800 rounded-lg mx-auto my-8 p-16">
+          <h1 className="text-2xl font-medium text-black dark:text-gray-300 mb-2">
             Kontakt
           </h1>
-          <h2 className="font-medium text-sm text-yellow-600 mb-4 uppercase tracking-wide">
+          <h2 className="font-medium text-sm text-yellow-800 dark:text-yellow-400 mb-4 uppercase tracking-wide">
             Jak się z nami skontaktować
           </h2>
           <p>Firma: Zakład kamieniarski Mariusz Słupianek</p>
           <p>Adres: Widoradz Górny 46, Wieluń</p>
           <p>Telefon: 601-358-467</p>
           <p>E-mail: zaklad@server.com</p>
-          <h1 className="text-2xl font-medium text-black dark:text-gray-400 mt-4 mb-2">
+          <h1 className="text-2xl font-medium text-black dark:text-gray-300 mt-4 mb-2">
             Dojazd
           </h1>
-          <h2 className="font-medium text-sm text-yellow-600 mb-4 uppercase tracking-wide">
+          <h2 className="font-medium text-sm text-yellow-800 dark:text-yellow-400 mb-4 uppercase tracking-wide">
             Jak do nas dojechać
           </h2>
           <p className="text-primary">
@@ -34,4 +34,4 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-export const Head = () => <Seo title="About page" />;
+export const Head = () => <Seo title="Zakład kamieniarski Mariusz Słupianek - Kontakt" />;

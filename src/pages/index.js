@@ -9,7 +9,7 @@ import { Seo } from "../components/core/seo";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Zakład kamieniarski Mariusz Słupianek">
       <div className="relativep-4">
         <SectionHero />
         <SectionAbout />
@@ -23,4 +23,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <Seo title="Home page" />;
+export const Head = () => <Seo title="Zakład kamieniarski Mariusz Słupianek" />;

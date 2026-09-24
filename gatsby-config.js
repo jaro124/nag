@@ -3,15 +3,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Starter Gatsby Zero`,
-    titleTemplate: "%s · Starter bolg",
-    description: `Gatsby and Tailwindcss starter`,
+    title: `Zakład kamieniarski Mariusz Słupianek`,
+    titleTemplate: "Zakład kamieniarski Mariusz Słupianek",
+    description: `Zakład kamieniarski Mariusz Słupianek`,
     keywords: [`gatsby`, `tailwind`, `react`, `tailwindcss`],
     author: `@doe`,
     siteUrl: "https://www.doe.com", // No trailing slash allowed!
     image: "/images/site-image.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@doe",
-    lang: "en",
+    lang: "pl",
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/blog/*`, `/about`],
+        precachePages: [`/`, `/kontakt`],
       },
     },
   ],

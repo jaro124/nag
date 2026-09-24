@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const Footer = ({ siteTitle }) => (
   <footer>
 
-    <div className="flex flex-wrap bg-white dark:bg-black text-black dark:text-gray-400">
+    <div className="flex flex-wrap bg-white dark:bg-neutral-900 text-black dark:text-gray-400">
       <div className="w-full md:w-1/3 p-4">
         <p className="text-xs pb-2">Kontakt:</p>
         <p>Firma: Zakład kamieniarski Mariusz Słupianek</p>
@@ -13,7 +13,7 @@ const Footer = ({ siteTitle }) => (
         <p>E-mail: zaklad@server.com</p>
         
       </div>
-      <div className="w-full md:w-1/3 bg-white dark:bg-black text-black dark:text-gray-400 p-4">
+      <div className="w-full md:w-1/3 bg-white dark:bg-neutral-900 text-black dark:text-gray-400 p-4">
       <p className="text-xs pb-4">Social:</p>
         <div className="flex flex-wrap">
           <svg 
@@ -59,7 +59,7 @@ const Footer = ({ siteTitle }) => (
           </svg>
         </div>
       </div>
-      <div className="w-full md:w-1/3 bg-white dark:bg-black text-black dark:text-gray-400 p-4">
+      <div className="w-full md:w-1/3 bg-white dark:bg-neutral-900 text-black dark:text-gray-400 p-4">
         <p className="text-xs md:pb-2">Linki:</p>
         <nav
           className="md:block md:items-center w-full md:w-auto"
@@ -88,7 +88,7 @@ const Footer = ({ siteTitle }) => (
 
     
 
-    <div className="w-full text-center p-8 bg-white dark:bg-black text-black dark:text-gray-400">
+    <div className="w-full text-center p-8 bg-white dark:bg-neutral-900 text-black dark:text-gray-400">
       © {new Date().getFullYear()}, made by jaro124
     </div>  
 
