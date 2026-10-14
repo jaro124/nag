@@ -7,7 +7,7 @@ const SectionCompany = () => {
     <div className="px-4">
       <div className="flex justify-center my-6">
         <div>
-          <h1 className="text-3xl font-semibold text-gray-800 uppercase underline underline-offset-8 decoration-yellow-500 lg:text-3xl dark:text-white">
+          <h1 className="text-3xl font-semibold text-gray-800 uppercase underline underline-offset-8 decoration-yellow-500 lg:text-4xl dark:text-white">
             O nas
           </h1>
         </div>
@@ -34,9 +34,7 @@ const SectionCompany = () => {
           oczekiwaniom klienta, jego możliwościom oraz charakterowi miejsca
           pamięci.
         </p>
-        <button className="bg-orange-400 hover:bg-orange-500 text-black font-semibold py-2 px-12 my-8 border border-orange-500 hover:border-transparent rounded">
-          <Link to="/kontakt">Skontaktuj się z nami</Link>
-        </button>
+        <Link className="btn btn-primary" to="/kontakt">Skontaktuj się z nami</Link>
       </div>
     </div>
   );

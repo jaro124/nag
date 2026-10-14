@@ -6,7 +6,7 @@ const SectionActions = () => {
     <div>
       <div className="flex justify-center my-6">
         <div>
-          <h1 className="text-3xl font-semibold text-gray-800 uppercase underline underline-offset-8 decoration-yellow-500 lg:text-3xl dark:text-white">
+          <h1 className="text-3xl font-semibold text-gray-800 uppercase underline underline-offset-8 decoration-yellow-500 lg:text-4xl dark:text-white">
             Czym się jeszcze zajmujemy
           </h1>
         </div>
@@ -19,9 +19,7 @@ const SectionActions = () => {
             <div class="px-6 py-4">
               <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Parapety</div>
               <p class="text-black dark:text-gray-400 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
+                Parapet mierzymy na gotowym oknie. Dzięki temu płyta pasuje do ościeży bez szpar i poprawek. Parapety zewnętrzne wykonujemy z okapnikiem.
               </p>
             </div>
           </div>
@@ -33,9 +31,7 @@ const SectionActions = () => {
             <div class="px-6 py-4">
               <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Schody</div>
               <p class="text-black dark:text-gray-400 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
+                Na zewnątrz liczy się powierzchnia. Ma trzymać przyczepność nawet po deszczu. Dobieramy ją do miejsca, w którym kamień ma leżeć.
               </p>
             </div>
           </div>
@@ -47,9 +43,7 @@ const SectionActions = () => {
             <div class="px-6 py-4">
               <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Blaty kuchenne</div>
               <p class="text-black dark:text-gray-400 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
+                Blaty kuchenne wykonujemy z najwyższej jakości materiałów, dbając o estetykę i funkcjonalność. Do kuchni najczęściej polecamy granit.
               </p>
             </div>
           </div>
@@ -61,9 +55,7 @@ const SectionActions = () => {
               <div class="px-6 py-4">
                 <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Obudowy kominków</div>
                 <p class="text-black dark:text-gray-400 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
+                  Kamień przy kominku musi znieść temperaturę. Dobieramy go do odległości od wkładu i do tego, jak często palisz.
                 </p>
               </div>
             </div>
@@ -75,9 +67,7 @@ const SectionActions = () => {
               <div class="px-6 py-4">
                 <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Kapliczki</div>
                 <p class="text-black dark:text-gray-400 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
+                  Kapliczka stoi na wietrze, deszczu i mrozie przez dziesiątki lat. Kamień i solidny fundament sprawiają, że dobrze to znosi.
                 </p>
               </div>
             </div>
@@ -89,9 +79,7 @@ const SectionActions = () => {
               <div class="px-6 py-4">
                 <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Pomniki</div>
                 <p class="text-black dark:text-gray-400 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
+                  Pomnik ma przetrwać dłużej niż ci, którzy go stawiają. Dlatego dobieramy kamień odporny na pogodę i dbamy o solidny fundament.
                 </p>
               </div>
             </div>

@@ -15,7 +15,7 @@ const SectionAbout = () => {
         <p className="mt-5">
           Nasz zakład oferuje kompleksową realizację nagrobków pojedynczych,
           podwójnych, rodzinnych oraz grobowców, wykonywanych z trwałych
-          materiałów, takich jak granit czy marmur.
+          materiałów, takich jak granit.
         </p>
         <p className="mt-2 mb-6">
           Możliwe jest przygotowanie projektu dostosowanego do indywidualnych
@@ -23,9 +23,7 @@ const SectionAbout = () => {
           kompozycje z rzeźbionymi elementami, ozdobnymi płytami i nietypową
           kolorystyką kamienia.
         </p>
-        <button className="bg-orange-400 hover:bg-orange-500 text-black font-semibold py-2 px-12 my-8 border border-orange-500 hover:border-transparent rounded">
-          <Link to="/kontakt">Skontaktuj się z nami</Link>
-        </button>
+        <Link className="btn btn-primary" to="/kontakt">Skontaktuj się z nami</Link>
       </div>
     </div>
   );

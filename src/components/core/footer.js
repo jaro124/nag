@@ -1,98 +1,86 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import site from "../../data/site";
 
-const Footer = ({ siteTitle }) => (
-  <footer>
-
-    <div className="flex flex-wrap bg-white dark:bg-neutral-900 text-black dark:text-gray-400">
-      <div className="w-full md:w-1/3 p-4">
-        <p className="text-xs pb-2">Kontakt:</p>
-        <p>Firma: Zakład kamieniarski Mariusz Słupianek</p>
-        <p>Adres: Widoradz Górny 46, Wieluń</p>
-        <p>Telefon: 601-358-467</p>
-        <p>E-mail: zaklad@server.com</p>
-        
-      </div>
-      <div className="w-full md:w-1/3 bg-white dark:bg-neutral-900 text-black dark:text-gray-400 p-4">
-      <p className="text-xs pb-4">Social:</p>
-        <div className="flex flex-wrap">
-          <svg 
-            version="1.1" 
-            id="Capa_1" 
-            xmlns="http://www.w3.org/2000/svg" 
-            x="0px" 
-            y="0px"
-            viewBox="0 0 512 512" 
-            className="fill-current text-black dark:text-gray-400"
-            width="36px" 
-            height="36px" 
+export default function Footer2() {
+  return (
+    <footer className="bg-white dark:bg-neutral-900 text-black dark:text-gray-400">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
+        <div>
+          <p className="flex flex-col leading-none">
+            <span>{site.nazwaGora}</span>
+            <span className="mt-1 font-display text-3xl text-orange-500">
+              {site.nazwaDol}
+            </span>
+          </p>
+          <p className="text-sm mt-8 max-w-[34ch]">
+            Pracownia kamieniarska od {site.rokZalozenia} roku. Projekt,
+            wykonanie i montaż.
+          </p>
+        </div>
+        <div>
+          <h2 className="text-xs">Kontakt</h2>
+          <address className="mt-3 not-italic leading-relaxed">
+            {site.adres.ulica}
+            <br />
+            {site.adres.kod} {site.adres.miasto}
+            <br />
+            <a
+              className="underline underline-offset-4"
+              href={`tel:${site.telefonLink}`}
             >
-		        <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-			        c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-			        c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-			        c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-			        c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-			        c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-			        C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-			        C480.224,136.96,497.728,118.496,512,97.248z"/>
-          </svg>
-          <svg 
-            version="1.1" 
-            id="Capa_1" 
-            xmlns="http://www.w3.org/2000/svg" 
-            x="0px" 
-            y="0px"
-            viewBox="0 0 512 512" 
-            className="fill-current text-black dark:text-gray-400 ml-4"
-            width="36px" 
-            height="36px" 
+              {site.telefon}
+            </a>
+            <br />
+            <a
+              className="underline underline-offset-4"
+              href={`mailto:${site.email}`}
             >
-            <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
-              c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
-              c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
-              c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
-              c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
-              c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
-              c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
-              c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
-              c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
-          </svg>
+              {site.email}
+            </a>
+          </address>
+          <h2 className="text-xs mt-4 mb-3">Social</h2>
+          <a href="https://www.instagram.com/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="36px"
+              height="36px"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#f55376"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z"
+              ></path>
+              <path
+                fill="#fac8d5"
+                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"
+              ></path>
+              <circle cx="31.5" cy="16.5" r="1.5" fill="#fac8d5"></circle>
+              <path
+                fill="#fac8d5"
+                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18 z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <h2 className="text-xs">Godziny pracy</h2>
+          <dl className="mt-3 space-y-1">
+            {site.godziny.map(([d, g]) => (
+              <div key={d} className="flex justify-between gap-4">
+                <dt>{d}</dt>
+                <dd>{g}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </div>
-      <div className="w-full md:w-1/3 bg-white dark:bg-neutral-900 text-black dark:text-gray-400 p-4">
-        <p className="text-xs md:pb-2">Linki:</p>
-        <nav
-          className="md:block md:items-center w-full md:w-auto"
-        >
-          {[
-            {
-              route: `/`,
-              title: `Home`
-            },
-            {
-              route: `/kontakt`,
-              title: `Kontakt`
-            }
-          ].map(link => (
-            <Link
-              className="block md:inline-block mt-4 md:mt-0 md:mr-6 no-underline font-medium text-primary border-b-2 border-transparent hover:border-yellow-500"
-              key={link.title}
-              to={link.route}
-            >
-              {link.title}
-            </Link>
-          ))}         
-        </nav>
+      <div className="border-t border-linia/15">
+        <p className="mx-auto max-w-6xl px-5 py-5 text-sm">
+          © {new Date().getFullYear()} {site.nazwa}
+        </p>
       </div>
-    </div>
-
-    
-
-    <div className="w-full text-center p-8 bg-white dark:bg-neutral-900 text-black dark:text-gray-400">
-      © {new Date().getFullYear()}, made by jaro124
-    </div>  
-
-  </footer>
-)
-  
-  export default Footer
+    </footer>
+  );
+}

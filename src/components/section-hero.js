@@ -24,9 +24,7 @@ const SectionHero = () => {
         <h2 className="text-2xl text-white mb-12">
           dostosowane do indywidualnych potrzeb i preferencji klientów.
         </h2>
-        <button className="bg-orange-400 hover:bg-orange-500 text-black font-semibold py-2 px-12 m-8 border border-orange-500 hover:border-transparent rounded">
-          <Link to="/kontakt">Skontaktuj się z nami</Link>
-        </button>
+        <Link className="btn btn-primary" to="/kontakt">Skontaktuj się z nami</Link>
       </div>
     </div>
   );
