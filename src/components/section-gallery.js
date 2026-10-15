@@ -57,7 +57,7 @@ export default function Gallery({ zdjecia }) {
         onKeyDown={onKeyDown}
         onClick={e => e.target === e.currentTarget && setIdx(null)}
         aria-label="Podgląd zdjęcia"
-        className="m-auto w-full max-w-5xl border border-zloto/50 bg-fond p-0 text-tekst backdrop:bg-black/90"
+        className="m-auto w-full max-w-5xl border border-zloto/50 bg-neutral-800 p-0 text-tekst backdrop:bg-black/90"
       >
         {aktualne && (
           <div className="p-3 sm:p-5">
@@ -67,7 +67,7 @@ export default function Gallery({ zdjecia }) {
               style={{ maxHeight: "74vh" }}
               imgStyle={{ objectFit: "contain" }}
             />
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+            <div className="mt-4 flex flex-wrap text-gray-300 items-center justify-between gap-3">
               <p aria-live="polite" className="text-przygaszony">
                 {opis(aktualne.name)} ({idx + 1} z {n})
               </p>

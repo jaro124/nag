@@ -15,7 +15,7 @@ const SectionActions = () => {
       <div className="flex flex-wrap justify-between mt-4 w-full">
         <div className="w-full lg:w-1/3 md:w-1/2 text-left p-2 lg:p-4">
           <div class="max-w-4xl bg-white dark:bg-neutral-800 rounded-lg">
-            <StaticImage src="../images/hero-image.jpeg" alt="Background" />
+            <StaticImage src="../images/uslugi/parapety.jpg" alt="Parapety" />
             <div class="px-6 py-4">
               <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Parapety</div>
               <p class="text-black dark:text-gray-400 text-base">
@@ -27,7 +27,7 @@ const SectionActions = () => {
 
         <div className="w-full lg:w-1/3 md:w-1/2 text-left p-2 lg:p-4">
           <div class="max-w-4xl bg-white dark:bg-neutral-800 rounded-lg">
-            <StaticImage src="../images/hero-image.jpeg" alt="Background" />
+            <StaticImage src="../images/uslugi/schody.jpeg" alt="Schody" />
             <div class="px-6 py-4">
               <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Schody</div>
               <p class="text-black dark:text-gray-400 text-base">
@@ -39,7 +39,7 @@ const SectionActions = () => {
 
         <div className="w-full lg:w-1/3 md:w-1/2 text-left p-2 lg:p-4">
           <div class="max-w-4xl bg-white dark:bg-neutral-800 rounded-lg">
-            <StaticImage src="../images/hero-image.jpeg" alt="Background" />
+            <StaticImage src="../images/uslugi/blaty-kuchenne.jpeg" alt="Blaty kuchenne" />
             <div class="px-6 py-4">
               <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Blaty kuchenne</div>
               <p class="text-black dark:text-gray-400 text-base">
@@ -51,7 +51,7 @@ const SectionActions = () => {
 
         <div className="w-full lg:w-1/3 md:w-1/2 text-left p-2 lg:p-4">
             <div class="max-w-4xl bg-white dark:bg-neutral-800 rounded-lg">
-              <StaticImage src="../images/hero-image.jpeg" alt="Background" />
+              <StaticImage src="../images/uslugi/obudowy-kominkow.jpeg" alt="Obudowy kominków" />
               <div class="px-6 py-4">
                 <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Obudowy kominków</div>
                 <p class="text-black dark:text-gray-400 text-base">
@@ -63,7 +63,7 @@ const SectionActions = () => {
 
           <div className="w-full lg:w-1/3 md:w-1/2 text-left p-2 lg:p-4">
             <div class="max-w-4xl bg-white dark:bg-neutral-800 rounded-lg">
-              <StaticImage src="../images/hero-image.jpeg" alt="Background" />
+              <StaticImage src="../images/uslugi/kapliczki.jpeg" alt="Kapliczki" />
               <div class="px-6 py-4">
                 <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Kapliczki</div>
                 <p class="text-black dark:text-gray-400 text-base">
@@ -75,7 +75,7 @@ const SectionActions = () => {
 
           <div className="w-full lg:w-1/3 md:w-1/2 text-left p-2 lg:p-4">
             <div class="max-w-4xl bg-white dark:bg-neutral-800 rounded-lg">
-              <StaticImage src="../images/hero-image.jpeg" alt="Background" />
+              <StaticImage src="../images/uslugi/pomniki.jpeg" alt="Pomniki" />
               <div class="px-6 py-4">
                 <div class="text-black dark:text-gray-200 font-bold text-xl mb-2">Pomniki</div>
                 <p class="text-black dark:text-gray-400 text-base">

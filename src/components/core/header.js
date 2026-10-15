@@ -2,6 +2,8 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 import { toggleTheme } from "../../utils/toggleTheme.js";
 
+import site from "../../data/site";
+
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
@@ -12,9 +14,12 @@ function Header() {
           className="flex items-center no-underline text-black dark:text-gray-400"
           to="/"
         >
-          <span className="font-bold text-xl tracking-tight pl-3">
-            Zakład kamieniarski Mariusz Słupianek
-          </span>
+          <p className="flex flex-col leading-none">
+            <span className="text-sm">{site.nazwaGora}</span>
+            <span className="mt-1 font-display text-xl font-bold text-orange-500">
+              {site.nazwaDol}
+            </span>
+          </p>
         </Link>
 
         <button
