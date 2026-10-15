@@ -8,7 +8,7 @@ export default function Footer2() {
         <div>
           <p className="flex flex-col leading-none">
             <span>{site.nazwaGora}</span>
-            <span className="mt-1 font-display text-3xl text-orange-500">
+            <span className="mt-1 font-display text-3xl text-orange-700 dark:text-orange-300">
               {site.nazwaDol}
             </span>
           </p>
@@ -39,7 +39,7 @@ export default function Footer2() {
             </a>
           </address>
           <h2 className="text-xs mt-4 mb-3">Social</h2>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/" alt="Instagram" className="inline-block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

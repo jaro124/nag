@@ -25,7 +25,7 @@ const SectionProcess = () => {
             {kroki.map(([t, d], i) => (
               <li key={t} className="border-t border-zloto pt-4">
                 <span className="font-display text-3xl text-zloto-jasne">{i + 1}</span>
-                <h3 className="mt-2 text-xl text-orange-500">{t}</h3>
+                <h3 className="mt-2 text-xl text-orange-700 dark:text-orange-300">{t}</h3>
                 <p className="mt-2 text-sm">{d}</p>
               </li>
             ))}

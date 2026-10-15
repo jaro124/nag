@@ -16,7 +16,7 @@ function Header() {
         >
           <p className="flex flex-col leading-none">
             <span className="text-sm">{site.nazwaGora}</span>
-            <span className="mt-1 font-display text-xl font-bold text-orange-500">
+            <span className="mt-1 font-display text-xl font-bold text-orange-700 dark:text-orange-300">
               {site.nazwaDol}
             </span>
           </p>
