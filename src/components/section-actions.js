@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const SectionActions = () => {
   return (
-    <div>
+    <div className="px-8">
       <div className="flex justify-center my-6">
         <div>
           <h1 className="text-3xl font-semibold text-gray-800 uppercase underline underline-offset-8 decoration-yellow-500 lg:text-4xl dark:text-white">

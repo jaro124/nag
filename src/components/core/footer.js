@@ -39,9 +39,10 @@ export default function Footer2() {
             </a>
           </address>
           <h2 className="text-xs mt-4 mb-3">Social</h2>
-          <a href="https://www.instagram.com/" alt="Instagram" className="inline-block">
+          <a href="https://www.instagram.com/" aria-label="Odwiedź nas na Instagramie" className="inline-block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
               x="0px"
               y="0px"
               width="36px"

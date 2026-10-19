@@ -11,24 +11,43 @@ export default function Gallery({ zdjecia }) {
   const [idx, setIdx] = useState(null)
   const dialogRef = useRef(null)
   const n = zdjecia.length
+  const otwarte = idx !== null
 
+  // otwieranie / zamykanie natywnego dialogu
   useEffect(() => {
     const d = dialogRef.current
     if (!d) return
-    if (idx !== null && !d.open) d.showModal()
-    if (idx === null && d.open) d.close()
-  }, [idx])
+    if (otwarte && !d.open) d.showModal()
+    if (!otwarte && d.open) d.close()
+  }, [otwarte])
+
+  // strzałki + kliknięcie w tło (backdrop)
+  useEffect(() => {
+    const d = dialogRef.current
+    if (!d || !otwarte) return
+
+    const onKeyDown = e => {
+      if (e.key === "ArrowRight") setIdx(i => (i + 1) % n)
+      if (e.key === "ArrowLeft") setIdx(i => (i - 1 + n) % n)
+    }
+    const onClick = e => {
+      if (e.target === d) setIdx(null)
+    }
+
+    d.addEventListener("keydown", onKeyDown)
+    d.addEventListener("click", onClick)
+    return () => {
+      d.removeEventListener("keydown", onKeyDown)
+      d.removeEventListener("click", onClick)
+    }
+  }, [otwarte, n])
 
   if (n === 0) {
     return <p className="mt-8 italic text-sm text-gray-600 dark:text-gray-400">Zdjęcia realizacji pojawią się tutaj wkrótce.</p>
   }
 
   const krok = d => setIdx(i => (i + d + n) % n)
-  const onKeyDown = e => {
-    if (e.key === "ArrowRight") krok(1)
-    if (e.key === "ArrowLeft") krok(-1)
-  }
-  const aktualne = idx !== null ? zdjecia[idx] : null
+  const aktualne = otwarte ? zdjecia[idx] : null
 
   return (
     <>
@@ -54,8 +73,6 @@ export default function Gallery({ zdjecia }) {
       <dialog
         ref={dialogRef}
         onClose={() => setIdx(null)}
-        onKeyDown={onKeyDown}
-        onClick={e => e.target === e.currentTarget && setIdx(null)}
         aria-label="Podgląd zdjęcia"
         className="m-auto w-full max-w-5xl border border-zloto/50 bg-neutral-800 p-0 text-tekst backdrop:bg-black/90"
       >

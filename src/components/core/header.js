@@ -29,6 +29,7 @@ function Header() {
         >
           <svg
             className="fill-current h-3 w-3"
+            aria-hidden="true"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -45,7 +46,7 @@ function Header() {
           {[
             {
               route: `/`,
-              title: `Home`,
+              title: `Start`,
             },
             {
               route: `/kontakt`,
