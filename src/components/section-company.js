@@ -7,7 +7,7 @@ const SectionCompany = () => {
     <div className="px-4">
       <div className="flex justify-center my-6">
         <div>
-          <h1 className="text-3xl font-semibold text-gray-800 uppercase underline underline-offset-8 decoration-yellow-500 lg:text-4xl dark:text-white">
+          <h1 className="section-header">
             O nas
           </h1>
         </div>

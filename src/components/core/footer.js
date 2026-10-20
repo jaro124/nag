@@ -77,7 +77,7 @@ export default function Footer2() {
           </dl>
         </div>
       </div>
-      <div className="border-t border-linia/15">
+      <div className="border-t border-black/15 dark:border-white/15">
         <p className="mx-auto max-w-6xl px-5 py-5 text-sm">
           © {new Date().getFullYear()} {site.nazwa}
         </p>

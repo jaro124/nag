@@ -2,26 +2,6 @@
 // wyrozniona: true  =>  główna specjalizacja (duży blok na stronie głównej).
 module.exports = [
   {
-    slug: "nagrobki",
-    wyrozniona: true,
-    nazwa: "Nagrobki",
-    krotko: "Pojedyncze, podwójne i rodzinne. Projekt, napisy i montaż na cmentarzu.",
-    lead:
-      "Nagrobek stoi dziesiątki lat, dlatego nie ponaglamy. Ustalamy z Tobą kamień, układ i napis, a formalności z zarządcą cmentarza omawiamy na samym początku.",
-    opis: [
-      "Wykonujemy nagrobki pojedyncze, podwójne i rodzinne według własnego projektu albo według Twojego rysunku czy zdjęcia. Wymiary dopasowujemy do regulaminu konkretnego cmentarza.",
-      "Napisy wykonujemy w kamieniu: ryte, kute lub w formie liter wypukłych. Przed wykonaniem dostajesz wizualizację z pełnym tekstem do sprawdzenia.",
-    ],
-    zakres: [
-      "Nagrobki pojedyncze, podwójne i rodzinne",
-      "Napisy, daty, ornamenty i wizerunki",
-      "Fundamenty i montaż na cmentarzu",
-      "Dopisywanie imion i dat na istniejących nagrobkach",
-      "Czyszczenie i renowacja starych nagrobków",
-      "Lampiony i wazony z kamienia",
-    ],
-  },
-  {
     slug: "pomniki",
     nazwa: "Pomniki",
     krotko: "Pomniki pamięci, obeliski, krzyże i tablice pamiątkowe.",

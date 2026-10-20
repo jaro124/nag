@@ -8,7 +8,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-white dark:bg-neutral-900 shadow-lg">
+    <header className="bg-white dark:bg-neutral-900 shadow-lg dark:shadow-none dark:border-b dark:border-white/15">
       <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-4">
         <Link
           className="flex items-center no-underline text-black dark:text-gray-400"

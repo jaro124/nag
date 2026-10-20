@@ -22,9 +22,9 @@ const IndexPage = ({ data }) => {
 
         {/* GALERIA */}
         <section id="galeria" className="scroll-mt-4">
-          <div className="flex justify-center mt-10 mb-2">
+          <div className="flex justify-center my-6">
             <div>
-              <h1 className="text-4xl font-semibold text-gray-800 uppercase underline underline-offset-8 decoration-yellow-500 lg:text-4xl dark:text-white mb-4">
+              <h1 className="section-header">
                 Galeria
               </h1>
             </div>
